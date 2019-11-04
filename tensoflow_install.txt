@@ -1,0 +1,20 @@
+Notes for Getting Tensorflow to Work on Pop_OS 18.04
+
+After making sure that the nvidia drivers are installed (which should be automatic
+for Pop), go here: https://support.system76.com/articles/cuda/
+
+Then run the following commands:
+
+sudo apt install system76-cuda-10.0
+sudo apt install system76-cudnn-10.1
+
+Then within the virtual python environment run the following to get tensorflow 2.0.0,
+also get tensorflow_probability.:
+
+pip install --upgrade tensorflow-gpu
+pip install --upgrade tensorflow-probability
+
+Keras is always good to have for easy model creation and checking to make sure certain packages
+are loaded correctly:
+
+pip install --upgrade keras
