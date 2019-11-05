@@ -1,6 +1,7 @@
 from sklearn.model_selection import train_test_split
 import tensorflow as tf
 
+
 def load():
     mnist = tf.keras.datasets.mnist
 
@@ -15,3 +16,5 @@ def load():
             'y_train': y_train,
             'x_test': x_test,
             'y_test': y_test}
+
+
