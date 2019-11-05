@@ -1,12 +1,10 @@
 from variation_inference_experiments.models.ffn import create_ffn
-
-from functools import partial
-
-grid_config = {}
-
+import tensorflow_probability as tfp
 
 
 def run():
+
+
 
 
     return
